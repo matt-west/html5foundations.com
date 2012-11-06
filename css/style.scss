@@ -153,12 +153,26 @@ span.green {
 }
 
 /*
- * Contents
+ * Scoial
  */
-#contents {
-	ol {
-		li {
-			font-size: 0.9em;
+#social {
+	text-align: center;
+
+	img {
+		max-width: 100%;
+		padding-top: 40px;
+	}
+
+	#social-btns {
+		margin-top: 20px;
+
+		div, iframe {
+			vertical-align: top;
+			*display: inline;
+		}
+
+		.fb-like {
+			margin-right: 15px;
 		}
 	}
 }
@@ -294,6 +308,12 @@ section {
 				width: 47%;
 				padding: 0 1.5%;
 				float: right;
+			}
+		}
+
+		#social {
+			img {
+				padding-top: 0;
 			}
 		}
 		

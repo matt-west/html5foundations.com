@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>HTML5 Foundations - Learn to build websites with HTML5</title>
-	<meta name="description" content="">
+	<title>HTML5 Foundations - Learn Web Design with HTML5</title>
+	<meta name="description" content="by Matt West. Discover HTML5 and master the art of web design in HTML5 Foundations.">
 	<meta name="author" content="Matt West">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,28 +16,28 @@
 	<![endif]-->
 
 	<link rel="shortcut icon" href="img/favicon.ico">
+	<meta property="og:image" content="apple_touch_114.png"/>
 	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114.png">
 
 </head>
 <body>
-	<div id="page-container">
+	<div id="page-container" itemscope itemtype="http://schema.org/Book">
 
 		<div id="feature">
 			<div class="container">
 				<div class="half-right" id="cover">
-					<img src="img/html5foundations_cover.png" alt="HTML5 Foundations Cover">
+					<img src="img/html5foundations_cover.png" alt="HTML5 Foundations Cover" itemprop="image">
 				</div>
 				<div class="half-left clearfix" id="book-info">
-					<h1>HTML5 Foundations</h1>
-					<p>
+					<h1 itemprop="name">HTML5 Foundations</h1>
+					<p itemprop="description">
 						Learn how to create your own websites using the latest web technologies.
 					</p>
 					<p>
 						<strong>Coming 20<sup>th</sup> November 2012</strong>
 					</p>
-					<div class="img-placeholder"></div>
 					<div>
 						<a href="#sample" class="btn" title="Download a Sample Chapter"><span class="hidden">Get a </span>Sample</a>
 						<a href="#buy" class="btn btn-green" title="Pre-Order HTML5 Foundations">Pre-Order<span class="hidden"> HTML5 Foundations</span></a>
@@ -48,7 +48,7 @@
 
 		<div id="overview">
 			<div class="container">
-				<section class="half-left">
+				<section class="half-left" itemprop="about">
 					<h2>Book <span class="green">Overview</span></h2>
 					<p>
 						HTML5 Foundations takes you beyond the pre-fab themes and basic website building tools found in most HTML books to show you how to transform plain words and static images into amazing websites that draw users in and make them want to stay.
@@ -58,10 +58,13 @@
 					</p>
 				</section>
 
-				<section id="contents" class="half-right">
-					<h2></h2>
-					
-				</section>
+				<div class="half-right" id="social">
+					<img src="img/pages.png" alt="HTML5 Foundations Pages" class="pages">
+					<div id="social-btns">
+						<div class="fb-like" data-href="https://www.facebook.com/html5foundations" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+						<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://html5foundations.com" data-lang="en">Tweet</a>
+					</div>
+				</div>
 			</div>
 		</div><!-- overview -->
 
@@ -96,8 +99,8 @@
 				</section>
 				<section class="half-right">
 					<h2>About <span class="green">Matt West</span></h2>
-					<p>
-						<a href="http://twitter.com/MattAntWest" title="Matt West" target="_blank">Matt West</a> is the founder of Developer City, where he builds HTML5 websites for firms around the world. Matt is a hybrid, dealing with both the design and development of the website projects he works on. Working on open source projects, Matt taught himself how to code and has since built everything from small business websites to advanced route optimizers.
+					<p itemscope itemtype="http://schema.org/Person" itemprop="author">
+						<a href="http://twitter.com/MattAntWest" title="Matt West" target="_blank" itemprop="name">Matt West</a> is the founder of Developer City, where he builds HTML5 websites for firms around the world. Matt is a hybrid, dealing with both the design and development of the website projects he works on. Working on open source projects, Matt taught himself how to code and has since built everything from small business websites to advanced route optimizers.
 					</p>
 				</section>
 			</div>
@@ -106,32 +109,35 @@
 		<footer>
 			<div class="container">
 				<div class="quarter">
-					<h3>Book Credits</h3>
-					<p>
-						Published by <a href="http://wiley.com" target="_blank" title="John Wiley & Sons, Inc" rel="nofollow">John Wiley &amp; Sons, Inc.</a>
-					</p>
-					<p>
-						Printed in the U.S. at Command Web Missouri.
-					</p>
-				</div><!-- Credits -->
-				<div class="quarter">
-					<h3>Website Credits</h3>
-					<p>
-						Badge Icons by <a href="http://teamtreehouse.com" target="_blank" title="Treehouse" rel="nofollow">Treehouse</a>.
-					</p>
-					<p>
-						Web Fonts Served by <a href="http://fontdeck.com" target="_blank" title="Fontdeck" rel="nofollow">Fontdeck</a>.
-					</p>
-					<p>
-						Hosted by <a href="https://www.digitalocean.com/" target="_blank" title="DigitalOcean" rel="nofollow">DigitalOcean</a>.
-					</p>
-				</div><!-- Credits -->
-				<div class="quarter">
 					<h3>Resources</h3>
 					<p>
 						You can download the code resources for this book from <a href="http://www.wiley.com/go/treehouse/html5foundations" target="_blank" title="HTML5 Foundations Code Resources">wiley.com</a>.
 					</p>
 				</div><!-- Resources -->
+				<div class="quarter">
+					<h3>Book Info</h3>
+					<p>
+						<span itemprop="numberOfPages">384</span> Pages in Stunning Full-Color.
+					</p>
+					<p>
+						Available in Paperback and eBook editions.
+					</p>
+					<p>
+						ISBN: <span itemprop="isbn">978-1-1183-5655-5</span>
+					</p>
+				</div><!-- Credits -->
+				<div class="quarter">
+					<h3>Credits</h3>
+					<p>
+						Published by <a href="http://wiley.com" target="_blank" title="John Wiley & Sons, Inc" rel="nofollow">John Wiley &amp; Sons, Inc.</a>
+					</p>
+					<p>
+						Badge Icons by <a href="http://teamtreehouse.com" target="_blank" title="Treehouse" rel="nofollow">Treehouse</a>.
+					</p>
+					<p>
+						Website Hosted by <a href="https://www.digitalocean.com/" target="_blank" title="DigitalOcean" rel="nofollow">DigitalOcean</a>.
+					</p>
+				</div><!-- Credits -->
 				<div class="quarter">
 					<h3>Legalities</h3>
 					<p>
@@ -139,9 +145,6 @@
 					</p>
 					<p>
 						All Rights Reserved.
-					</p>
-					<p>
-						ISBN 978-1-1183-5655-5
 					</p>
 				</div>
 			</div>
@@ -151,5 +154,17 @@
 	<script src="js/jquery-1.8.2.min.js"></script>
 	<script src="js/application.js"></script>
 
+	<!-- Twitter -->
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+	<!-- Facebook -->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=266340786799464";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 </body>
 </html>

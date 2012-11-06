@@ -111,10 +111,20 @@ span.green {
   border-bottom: 1px solid #E4E4DF; }
 
 /*
- * Contents
+ * Scoial
  */
-#contents ol li {
-  font-size: 0.9em; }
+#social {
+  text-align: center; }
+  #social img {
+    max-width: 100%;
+    padding-top: 40px; }
+  #social #social-btns {
+    margin-top: 20px; }
+    #social #social-btns div, #social #social-btns iframe {
+      vertical-align: top;
+      *display: inline; }
+    #social #social-btns .fb-like {
+      margin-right: 15px; }
 
 /*
  * Author
@@ -199,6 +209,9 @@ section p {
     width: 47%;
     padding: 0 1.5%;
     float: right; }
+
+  #social img {
+    padding-top: 0; }
 
   a.btn,
   a:visited.btn {
