@@ -3,6 +3,9 @@
 body {
   background: #FFF; }
 
+span.green {
+  color: #69914a; }
+
 /* #Page Styles
 ================================================== */
 #page-container {
@@ -55,12 +58,15 @@ body {
   background: #f0f0ed url("../img/header_bg.png") repeat-x bottom;
   border-bottom: 1px solid #E4E4DF; }
   #feature h1 {
-    font-weight: bold;
+    margin-top: 0.18em;
+    font-weight: 400;
     font-size: 4em;
     line-height: 1.2em;
     letter-spacing: 1px; }
   #feature p {
     font-size: 1.3em; }
+  #feature img {
+    max-width: 100%; }
   #feature .container {
     padding: 40px 10px; }
 
@@ -71,12 +77,14 @@ body {
   text-align: center;
   background: #F0F0ED;
   border-bottom: 1px solid #E4E4DF;
-  position: relative; }
+  position: relative;
+  padding: 0 1.5%; }
   #badges .container {
     padding: 10px 0;
     position: relative;
     height: 150px; }
-  #badges #badge-summary {
+  #badges #badge-summary-screen,
+  #badges #badge-summary-mobile {
     line-height: 22px; }
   #badges h2 {
     margin: 10px 0; }
@@ -92,12 +100,21 @@ body {
       padding-top: 0;
       cursor: pointer; }
 
+#badge-summary-mobile {
+  display: none; }
+
 /*
  * Overview
  */
 #overview {
   background: white;
   border-bottom: 1px solid #E4E4DF; }
+
+/*
+ * Contents
+ */
+#contents ol li {
+  font-size: 0.9em; }
 
 /*
  * Author
@@ -137,10 +154,117 @@ section p {
 /* #Media Queries
 ================================================== */
 /* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+  #feature h1 {
+    font-size: 3em; }
+  #feature p {
+    font-size: 1em; }
+
+  #badges img {
+    padding-top: 38px;
+    height: 60px;
+    width: 60px; }
+    #badges img:hover {
+      padding-top: 15px; }
+
+  a.btn,
+  a:visited.btn {
+    display: block;
+    float: left;
+    clear: both;
+    margin: 10px 0; } }
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 /* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+  .half-left {
+    width: 94%;
+    padding: 0 3%;
+    float: none; }
+
+  .half-right {
+    width: 94%;
+    padding: 0 3%;
+    float: none; }
+
+  .quarter {
+    width: 44%;
+    padding: 0 3%;
+    float: left; }
+
+  #feature .half-left {
+    width: 47%;
+    padding: 0 1.5%;
+    float: left; }
+  #feature .half-right {
+    width: 47%;
+    padding: 0 1.5%;
+    float: right; }
+
+  a.btn,
+  a:visited.btn {
+    display: inline-block;
+    float: none;
+    margin: 10px 10px 10px 0; }
+
+  #badges .container {
+    height: auto; }
+  #badges img {
+    padding-top: 0;
+    height: 60px;
+    width: 60px; }
+    #badges img:hover {
+      padding-top: 0; } }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (max-width: 665px) {
+  #feature .container {
+    padding: 20px 10px; }
+  #feature a.btn,
+  #feature a:visited.btn {
+    margin: 0 10px 10px 0; }
+  #feature h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 0; }
+  #feature .hidden {
+    display: none; }
+  #feature img {
+    max-width: 200px; } }
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  #feature {
+    text-align: center; }
+    #feature .half-left,
+    #feature .half-right {
+      width: 94%;
+      padding: 0 3%;
+      float: none; }
+    #feature p {
+      font-size: 1em; }
+    #feature .hidden {
+      display: none; }
+    #feature img {
+      max-width: 75%; }
+    #feature .half-right {
+      margin-bottom: 20px; }
+    #feature a.btn,
+    #feature a:visited.btn {
+      margin: 0 5px 0px 5px; }
+
+  #badge-summary-screen {
+    display: none; }
+
+  #badge-summary-mobile {
+    display: block; } }
+@media only screen and (max-width: 400px) {
+  #feature h1 {
+    font-size: 1.6em; }
+
+  #badges h2 {
+    font-size: 1.8em; }
+  #badges img {
+    padding: 5px; }
+    #badges img:hover {
+      padding: 5px; } }
 /* #Font-Face
 ================================================== */
 /* 	This is the proper syntax for an @font-face file

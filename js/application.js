@@ -1,21 +1,29 @@
 $(function() {
 
-	var badgeTip = $("#badge-summary");
-	var badgeTipContent = $(badgeTip).text();
+	var badgeTipScreen = $("#badge-summary-screen");
+	var badgeTipMobile = $("#badge-summary-mobile");
+	var badgeTipContentScreen = $(badgeTipScreen).text();
+	var badgeTipContentMobile = $(badgeTipMobile).text();
 
 	var hovering = false;
 
-	$("#badges img").hover(function(e) {
+	$("#badges a").hover(function(e) {
 		hovering = true;
-		$(badgeTip).html('<strong>' + $(this).attr('alt') + '</strong>');
+		$(badgeTipScreen).html('<strong>' + $(this).attr('title') + '</strong>');
+		$(badgeTipMobile).html('<strong>' + $(this).attr('title') + '</strong>');
 	}, function(e) {
 		hovering = false;
 
 		setTimeout(function() {
 			if (hovering == false) {
-				$(badgeTip).text(badgeTipContent);
+				$(badgeTipScreen).text(badgeTipContentScreen);
+				$(badgeTipMobile).text(badgeTipContentMobile);
 			}
 		}, 100);
+	});
+
+	$("#badges a").click(function(e) {
+		e.preventDefault();
 	});
 
 });
