@@ -134,7 +134,7 @@
 		padding: 12px 15px;
 		margin: 0 10px 0 0;
 		font-size: 0.8em;
-		background: #4090BA;
+		background-color: #4090BA;
 		color: white !important;
 		text-transform: uppercase;
 		border: none;
@@ -152,26 +152,31 @@
 		&:hover,
 		&:focus {
 			color: white !important;
-			background: #3981A7;
+			background-color: #3981A7;
 		}
 
 		&:active {
-			background: #347698;
+			background-color: #347698;
 		}
 	}
 
 	a.btn-green,
 	a:visited.btn-green {
-		background: #82A44D;
+		background-color: #82A44D;
 
 		&:hover,
 		&:focus {
-			background: #718f43;
+			background-color: #718f43;
 		}
 
 		&:active {
-			background: #67823d;
+			background-color: #67823d;
 		}
+	}
+
+	a.btn-small,
+	a:visited.btn-small {
+		padding: 8px 15px;
 	}
 
 
