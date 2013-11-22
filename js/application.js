@@ -15,7 +15,7 @@ $(function() {
 		hovering = false;
 
 		setTimeout(function() {
-			if (hovering == false) {
+			if (hovering === false) {
 				$(badgeTipScreen).text(badgeTipContentScreen);
 				$(badgeTipMobile).text(badgeTipContentMobile);
 			}
